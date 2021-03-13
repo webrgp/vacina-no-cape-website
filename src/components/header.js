@@ -1,42 +1,15 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
+import React from 'react'
+import 'twin.macro'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+const Header = () => {
+  return (
+    <header tw="max-w-sm mx-auto p-2 mt-2">
+      <h1
+        tw="jost font-semibold text-3xl text-center bg-yellow-300 p-4"
+      ><Link to="/" tw="inline-block text-blue-600">🇧🇷 Vacina No Cape 🇧🇷</Link></h1>
+    </header>
+  )
 }
 
 export default Header
