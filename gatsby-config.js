@@ -36,6 +36,9 @@ module.exports = {
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: "G-132ZWVW35L",
+        trackingIds: [
+          "G-132ZWVW35L",
+        ],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
         gtagConfig: {
