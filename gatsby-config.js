@@ -3,6 +3,7 @@ module.exports = {
     title: `Vacina No Cape`,
     description: `Aprenda sobre a disponibilidade de vacinação no Cape.`,
     author: `@gatsbyjs`,
+    siteUrl: `https://vacinanocape.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

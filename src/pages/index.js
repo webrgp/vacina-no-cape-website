@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Marque sua vacina" />
+    <SEO title="Marque sua vacina" description="Ajude identificar adultos vulneráveis com mains de 65 anos, que ainda não conseguiram fazer parte das atuais ofertas de vacinas, especificamente indivíduos que precisam de ajuda para marcar as consultas de vacinação"  />
     <div tw="max-w-screen-lg  mx-auto mt-2 bg-white p-4">
       <p>Como parte da função da cidade de Barnstable na organização de Vacinas COVID-19 do Cape Cod, nosso Conselho de Divisão da Terceira Idade (<a href="https://www.town.barnstable.ma.us/BoardsCommittees/CouncilonAging" target="_blank" rel="noreferrer" tw="text-blue-500 hover:underline">Council On Aging</a>) está identificando adultos vulneráveis com mains de 65 anos, que ainda não conseguiram fazer parte das atuais ofertas de vacinas, especificamente indivíduos que precisam de ajuda para marcar as consultas de vacinação, mas são capazes de se transportar até o Cape Cod Community College.</p>
       <br />
