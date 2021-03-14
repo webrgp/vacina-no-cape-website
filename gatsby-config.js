@@ -2,8 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Vacina No Cape`,
     description: `Aprenda sobre a disponibilidade de vacinação no Cape.`,
-    author: `@webrgp`,
-    siteUrl: `https://vacinanocape.com`
+    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `VacinaNoCape`,
-        short_name: `VNC`,
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
         start_url: `/`,
         background_color: `#08518E`,
         theme_color: `#08518E`,
@@ -36,6 +35,7 @@ module.exports = {
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: "G-132ZWVW35L",
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
           "G-132ZWVW35L",
         ],
@@ -56,6 +56,7 @@ module.exports = {
           // exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
+    },
     // `gatsby-plugin-offline`,
   ],
 }
