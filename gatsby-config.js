@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Vacina No Cape`,
     description: `Aprenda sobre a disponibilidade de vacinação no Cape.`,
-    author: `@gatsbyjs`,
+    author: `@webrgp`,
+    siteUrl: `https://vacinanocape.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `VacinaNoCape`,
+        short_name: `VNC`,
         start_url: `/`,
         background_color: `#08518E`,
         theme_color: `#08518E`,
@@ -30,8 +31,28 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-styled-components`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "G-132ZWVW35L",
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        gtagConfig: {
+          // optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          // exclude: ["/preview/**", "/do-not-track/me/too/"],
+        },
+      },
     // `gatsby-plugin-offline`,
   ],
 }
